@@ -6,6 +6,8 @@ class Pessoa {
 
     private set
 
+    fun informacoes() = "$nome + $cpf"
+
     inner class Endereco {
         var rua: String = "Maria Baviera"
     }
@@ -17,4 +19,5 @@ fun main(){
     println(fulano.nome)
     println(fulano.cpf)
     println(fulano.Endereco().rua)
+    println(fulano.informacoes())
 }
