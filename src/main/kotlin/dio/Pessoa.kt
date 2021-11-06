@@ -4,7 +4,7 @@ class Pessoa {
     var nome: String = "Top"
     var cpf: String = "210.441.393-15"
 
-    private set
+    private set //Nao permite que o objeto tenha seus dados alterados
 
     fun informacoes() = "$nome + $cpf"
 
